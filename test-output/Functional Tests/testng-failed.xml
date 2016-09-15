@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional Tests]">
+  <parameter name="browser-name" value="firefox"/>
+  <parameter name="operating-system" value="any"/>
+  <parameter name="server-host" value="127.0.0.1"/>
+  <parameter name="server-port" value="4444"/>
+  <parameter name="browser-version" value="any"/>
+  <listeners>
+    <listener class-name="inseadTesting.InseadAnnotationTransformer"/>
+    <listener class-name="inseadTesting.InseadEmailableReporter"/>
+    <listener class-name="inseadTesting.FailureListener"/>
+  </listeners>
+  <test name="Names(failed)">
+    <classes>
+      <class name="inseadTesting.TestNames">
+        <methods>
+          <include name="FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- inseadTesting.TestNames -->
+    </classes>
+  </test> <!-- Names(failed) -->
+</suite> <!-- Failed suite [Functional Tests] -->

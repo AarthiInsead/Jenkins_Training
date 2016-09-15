@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Functional_Tests">
-              <span class="suite-name border-passed">Functional Tests</span>
+              <span class="suite-name border-failed">Functional Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Functional_Tests">
-                    <span>seleniumConfig.xml</span>
+                    <span>C:\work\Jenkins\jenkins-training\src\inseadTesting\seleniumConfig.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Functional_Tests" class="hide-methods failed suite-Functional_Tests"> (hide)</a> <!-- hide-methods failed suite-Functional_Tests -->
+                      <a href="#" panel-name="suite-Functional_Tests" class="show-methods failed suite-Functional_Tests"> (show)</a> <!-- show-methods failed suite-Functional_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Functional_Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Functional_Tests" title="inseadTesting.TestNames" hash-for-method="FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft(inseadTesting.TestParameters@19cccea2, inseadTesting.MyInseadUser@5511fae9)">FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft(inseadTesting.TestParameters@19cccea2, inseadTesting.MyInseadUser@5511fae9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Functional_Tests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,21 +117,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Functional_Tests" class="panel Functional_Tests">
+          <div class="suite-Functional_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">inseadTesting.TestNames</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft(inseadTesting.TestParameters@19cccea2, inseadTesting.MyInseadUser@5511fae9)">
+                  </a> <!-- FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft(inseadTesting.TestParameters@19cccea2, inseadTesting.MyInseadUser@5511fae9) -->
+                  <span class="method-name">FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft</span>
+                  <span class="parameters">(inseadTesting.TestParameters@19cccea2, inseadTesting.MyInseadUser@5511fae9)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Corporate Governance d&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;SGP-LT-0221&apos;, ip: &apos;10.121.17.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 1.92 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;SGP-LT-0221&apos;, ip: &apos;10.121.17.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=partial link text, value=Corporate Governance d}
+Session ID: 559a7f4b-44d4-4678-ad78-5f13098a9b17
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, acceptSslCerts=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=559a7f4b-44d4-4678-ad78-5f13098a9b17, version=46.0, databaseEnabled=true, cssSelectorsEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=false, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:436)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:273)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at inseadTesting.TestNames.FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft(TestNames.java:75)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;SGP-LT-0221&apos;, ip: &apos;10.121.17.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Corporate Governance d&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;SGP-LT-0221&apos;, ip: &apos;10.121.17.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:32:46&apos;
+System info: host: &apos;SGP-LT-0221&apos;, ip: &apos;10.121.17.176&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/AB87E~1.NAR/AppData/Local/Temp/anonymous1135262922694765422webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/AB87E~1.NAR/AppData/Local/Temp/anonymous1135262922694765422webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/AB87E~1.NAR/AppData/Local/Temp/anonymous1135262922694765422webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/AB87E~1.NAR/AppData/Local/Temp/anonymous1135262922694765422webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/AB87E~1.NAR/AppData/Local/Temp/anonymous1135262922694765422webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Functional_Tests-class-failed -->
         </div> <!-- panel Functional_Tests -->
         <div panel-name="test-xml-Functional_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/jvinjamoori/dev/projects/INSEAD/jenkins-training/src/inseadTesting/seleniumConfig.xml</span>
+            <span class="header-content">C:\work\Jenkins\jenkins-training\src\inseadTesting\seleniumConfig.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Functional Tests&quot;&gt;
-  &lt;parameter name=&quot;server-host&quot; value=&quot;127.0.0.1&quot;/&gt;
-  &lt;parameter name=&quot;browser-name&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser-name&quot; value=&quot;firefox&quot;/&gt;
   &lt;parameter name=&quot;operating-system&quot; value=&quot;any&quot;/&gt;
-  &lt;parameter name=&quot;browser-version&quot; value=&quot;any&quot;/&gt;
+  &lt;parameter name=&quot;server-host&quot; value=&quot;127.0.0.1&quot;/&gt;
   &lt;parameter name=&quot;server-port&quot; value=&quot;4444&quot;/&gt;
+  &lt;parameter name=&quot;browser-version&quot; value=&quot;any&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;inseadTesting.InseadAnnotationTransformer&quot;/&gt;
     &lt;listener class-name=&quot;inseadTesting.InseadEmailableReporter&quot;/&gt;
@@ -165,11 +238,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft')
+data.setCell(0, 2, 'inseadTesting.TestNames')
+data.setCell(0, 3, 16604);
 window.suiteTableData['Functional_Tests']= { tableData: data, tableDiv: 'times-div-Functional_Tests'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Functional_Tests">
               </div> <!-- times-div-Functional_Tests -->
             </div> <!-- times-div -->
@@ -184,16 +262,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Functional_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">inseadTesting.TestNames</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Functional_Tests" class="panel">
@@ -201,6 +272,22 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">inseadTesting.TestNames</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(127.0.0.1, 4444, firefox, any, any)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FUNC321002_1_Update_an_active_Primary_Name_in_Peoplesoft(inseadTesting.TestParameters@19cccea2, inseadTesting.MyInseadUser@5511fae9)</span>
+                <span class="method-start">2498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">19113 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

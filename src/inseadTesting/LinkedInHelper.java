@@ -48,7 +48,7 @@ public class LinkedInHelper {
 		
 		
 		// Wait till the Industry is visible
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("form_industryId")));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("form_industryId")));
 
 		// fill Industry
 		Select industryDropdown = new Select(driver.findElement(By.id("form_industryId")));
